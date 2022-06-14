@@ -22,6 +22,9 @@ Run the migrations in production once.
 
 ### Step 4
 You can now safely uninstall the package, you only need to install it again in case of a new release.
+```bash
+composer remove guardsmanpanda/larabear-culture
+```
 ***
 ## Security
 If you discover any security related issues, please email guardsmanpanda@gmail.com instead of using the issue tracker.

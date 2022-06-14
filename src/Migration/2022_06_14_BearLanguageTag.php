@@ -9,11 +9,11 @@ return new class extends Migration {
     public function up(): void {
         Schema::create(table: 'bear_language_tag', callback: static function (Blueprint $table) {
             if (DB::getPdo()->getAttribute(PDO::ATTR_DRIVER_NAME) === 'pgsql') {
-                $table->text(column: 'language_tag');
+                $table->text(column: 'language_tag')->primary();
                 $table->text(column: 'language_iso2_code');
                 $table->text(column: 'country_iso2_code');
             } else {
-                $table->string(column: 'language_tag');
+                $table->string(column: 'language_tag')->primary();
                 $table->string(column: 'language_iso2_code');
                 $table->string(column: 'country_iso2_code');
             }
