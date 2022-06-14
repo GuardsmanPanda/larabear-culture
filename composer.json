@@ -1,0 +1,48 @@
+{
+    "name": "guardsmanpanda/larabear-culture",
+    "description": "Bear facts about the world.",
+    "keywords": [
+        "guardsmanpanda",
+        "larabear"
+    ],
+    "homepage": "https://github.com/guardsmanpanda/larabear-locale",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Bjørn Dons",
+            "email": "guardsmanpanda@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^8.1",
+        "ext-pdo": "*",
+        "illuminate/console": "^v8.83.12 || ^9.14",
+        "illuminate/database": "^v8.83.12 || ^9.14",
+        "illuminate/support": "^v8.83.12 || ^9.14"
+    },
+    "autoload": {
+        "psr-4": {
+            "GuardsmanPanda\\LarabearCulture\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+        }
+    },
+    "scripts": {
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "GuardsmanPanda\\LarabearCulture\\Provider\\BearLocaleServiceProvider"
+            ],
+            "aliases": {
+            }
+        }
+    }
+}
