@@ -9,7 +9,8 @@ class BearCultureServiceProvider extends ServiceProvider {
         if ($this->app->runningInConsole()) {
             $this->commands(commands: [
             ]);
-            $this->loadMigrationsFrom(paths: [ __DIR__.'/../Migration']);
+            $this->publishes(paths: [__DIR__ . '/../../../../assets/public' => $this->app->basePath(path: 'public'),], groups: 'bear-locale');
+            $this->loadMigrationsFrom(paths: [ __DIR__.'/../../../Migration']);
         }
     }
 }

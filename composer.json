@@ -39,7 +39,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "GuardsmanPanda\\LarabearCulture\\Provider\\BearCultureServiceProvider"
+                "GuardsmanPanda\\LarabearCulture\\Infrastructure\\Laravel\\Provider\\BearCultureServiceProvider"
             ],
             "aliases": {
             }
