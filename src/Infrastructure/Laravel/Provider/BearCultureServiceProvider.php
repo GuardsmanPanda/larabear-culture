@@ -1,6 +1,6 @@
 <?php
 
-namespace GuardsmanPanda\LarabearCulture\Provider;
+namespace GuardsmanPanda\LarabearCulture\Infrastructure\Laravel\Provider;
 
 use Illuminate\Support\ServiceProvider;
 
