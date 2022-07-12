@@ -28,7 +28,6 @@ return new class extends Migration {
             array('language_tag' => 'sl-SI', 'language_iso2_code' => 'sl', 'country_iso2_code' => 'SI'),
             array('language_tag' => 'th-TH', 'language_iso2_code' => 'th', 'country_iso2_code' => 'TH'),
             array('language_tag' => 'uk-UA', 'language_iso2_code' => 'uk', 'country_iso2_code' => 'UA'),
-            array('language_tag' => 'uk-UA', 'language_iso2_code' => 'uk', 'country_iso2_code' => 'UA'),
             array('language_tag' => 'vi-VN', 'language_iso2_code' => 'vi', 'country_iso2_code' => 'VN'),
         );
         DB::table('bear_language_tag')->insert($locales);
