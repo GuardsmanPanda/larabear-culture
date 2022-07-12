@@ -1,5 +1,6 @@
 <?php
 
+use GuardsmanPanda\Larabear\Infrastructure\Database\Service\BearDBService;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\DB;
@@ -8,7 +9,7 @@ use Illuminate\Support\Facades\Schema;
 return new class extends Migration {
     public function up(): void {
         Schema::create(table: 'bear_country', callback: static function (Blueprint $table) {
-            if (DB::getPdo()->getAttribute(PDO::ATTR_DRIVER_NAME) === 'pgsql') {
+            if (BearDBService::defaultConnectionDriver() === 'pgsql') {
                 $table->text(column: 'country_iso2_code')->primary();
                 $table->text(column: 'country_iso3_code');
             }   else {
