@@ -14,7 +14,6 @@ return new class extends Migration {
             array('language_tag' => 'ja-JP', 'language_iso2_code' => 'ja', 'country_iso2_code' => 'JP'),
             array('language_tag' => 'hr-HR', 'language_iso2_code' => 'hr', 'country_iso2_code' => 'HR'),
             array('language_tag' => 'hu-HU', 'language_iso2_code' => 'hu', 'country_iso2_code' => 'HU'),
-            array('language_tag' => 'fo-FO', 'language_iso2_code' => 'fo', 'country_iso2_code' => 'FO'),
             array('language_tag' => 'et-EE', 'language_iso2_code' => 'et', 'country_iso2_code' => 'EE'),
             array('language_tag' => 'bg-BG', 'language_iso2_code' => 'bg', 'country_iso2_code' => 'BG'),
             array('language_tag' => 'cs-CZ', 'language_iso2_code' => 'cs', 'country_iso2_code' => 'CZ'),
